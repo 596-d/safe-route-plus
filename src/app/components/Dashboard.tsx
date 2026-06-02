@@ -20,6 +20,8 @@ type Props = {
 
   riskLevel: string
 
+  routeRisk: number
+
   reportCount: number
 
   volunteers: Volunteer[]
@@ -32,7 +34,7 @@ type Props = {
 
   onSOS: () => void
 }
-
+  
 const destinations = [
   "RK Beach",
   "Rushikonda",
@@ -48,6 +50,7 @@ export default function Dashboard({
   setDestination,
   safetyScore,
   routeName,
+  routeRisk,
   riskLevel,
   reportCount,
   volunteers,

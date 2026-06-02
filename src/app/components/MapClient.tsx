@@ -488,6 +488,8 @@ export default function MapClient() {
         riskLevel={
           currentDestination.risk
         }
+        routeRisk={30}
+        
         reportCount={
           reports.length
         }
