@@ -22,6 +22,8 @@ type Props = {
 
   routeRisk: number
 
+  distance: number
+
   reportCount: number
 
   volunteers: Volunteer[]
@@ -52,6 +54,7 @@ export default function Dashboard({
   routeName,
   routeRisk,
   riskLevel,
+  distance,
   reportCount,
   volunteers,
   nearbyPlaces,
@@ -188,9 +191,9 @@ export default function Dashboard({
           </p>
 
           <p>
-            Distance:
-            2.1 km
-          </p>
+  Distance:
+  {distance} km
+</p>
 
           <p>
             Risk:

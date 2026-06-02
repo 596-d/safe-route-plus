@@ -39,6 +39,7 @@ const destinationData = {
   "RK Beach": {
     score: 88,
     risk: "Low",
+    distance : "24",
 
     route:
       "Police Station Road",
@@ -67,6 +68,7 @@ const destinationData = {
 
     route:
       "Hill Route",
+      distance : "32",
 
     nearby: [
       "🏖 Beach Access - 2 min",
@@ -89,6 +91,7 @@ const destinationData = {
     score: 82,
 
     risk: "Low",
+    distance : "22",
 
     route:
       "Central Route",
@@ -114,6 +117,7 @@ const destinationData = {
     score: 76,
 
     risk: "Medium",
+    distance : "27",
 
     route:
       "MVP Main Road",
@@ -139,6 +143,7 @@ const destinationData = {
     score: 91,
 
     risk: "Very Low",
+    distance : "28",
 
     route:
       "Tourist Route",
@@ -164,6 +169,7 @@ const destinationData = {
     score: 84,
 
     risk: "Low",
+    distance : "25",
 
     route:
       "University Road",
@@ -189,6 +195,7 @@ const destinationData = {
     score: 72,
 
     risk: "Medium",
+    distance : "22",
 
     route:
       "Commercial Route",
@@ -489,7 +496,10 @@ export default function MapClient() {
           currentDestination.risk
         }
         routeRisk={30}
-        
+        distance={
+  currentDestination.distance
+}
+
         reportCount={
           reports.length
         }
