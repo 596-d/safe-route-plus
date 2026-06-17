@@ -2,6 +2,11 @@
 
 import dynamic from "next/dynamic"
 
+type Props = {
+  profile: string
+  onChangeProfile: () => void
+}
+
 const MapClient = dynamic(
   () => import("./MapClient"),
   {
@@ -9,6 +14,16 @@ const MapClient = dynamic(
   }
 )
 
-export default function Map() {
-  return <MapClient />
+export default function Map({
+  profile,
+  onChangeProfile,
+}: Props) {
+  return (
+    <MapClient
+      profile={profile}
+      onChangeProfile={
+        onChangeProfile
+      }
+    />
+  )
 }
